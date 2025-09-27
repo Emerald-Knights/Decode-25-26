@@ -22,8 +22,8 @@ public class Shooter extends Subsystem {
     @Override
     public void update(boolean isAuton){
         if(activeShoot) {
-            Robot.getInstance().rightShooter.setPower(1);
-            Robot.getInstance().leftShooter.setPower(-1);
+            Robot.getInstance().rightShooter.setPower(0.8);
+            Robot.getInstance().leftShooter.setPower(-0.8);
         }
         else{
             Robot.getInstance().rightShooter.setPower(0);
